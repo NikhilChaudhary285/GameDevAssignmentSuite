@@ -2,7 +2,8 @@
     "name": "ScrollMenu",
     "rootNamespace": "",
     "references": [
-        "GUID:a89cd0128536d49498ab9ab7910d3022"
+        "GUID:a89cd0128536d49498ab9ab7910d3022",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
