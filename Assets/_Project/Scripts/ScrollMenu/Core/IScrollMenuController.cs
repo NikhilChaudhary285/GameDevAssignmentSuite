@@ -19,6 +19,7 @@ namespace TechnicalAssignment.ScrollMenu.Core
         void GoToIndex(int index);
         void OnDragDelta(float deltaX);
         void OnDragEnd(float velocity);
+        void OnAnimationComplete();
 
         event Action<int> OnPageChanged;   // fires with new index
     }

@@ -235,6 +235,7 @@ namespace TechnicalAssignment.ScrollMenu.UI
             _paginationDots.SetActiveDot(index);
             _scaleAnimator.SetCenterIndex(index);
             UpdateButtonStates(index);
+            _controller.OnAnimationComplete();
         }
 
         // ── Snap Animation ─────────────────────────────────────────────────
