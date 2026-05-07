@@ -841,13 +841,50 @@ Assets → Export Package →
 
 ## 🗂 Git History \& Development Phases
 
-This project was built in structured phases:
+This project was developed incrementally in structured production-style phases using clean architecture, SOLID principles, and iterative feature validation.
 
 ```
-Phase 1 → Project setup, folder architecture, assembly definitions, base patterns
-Phase 2 → Coin Change algorithm (DP), test suite, Unity test scene
-Phase 3 → Scroll Menu — swipe input, snap animation, card prefab, dots
-Phase 4 → Image Download System — queue, cache, WebImage, test UI
+### Phase 1 — Project Foundation & Architecture
+- Unity project setup and configuration
+- Scalable folder architecture creation
+- Assembly Definitions (.asmdef)
+- Common interfaces and utilities
+- Generic Singleton base pattern
+- Git setup and .gitignore configuration
+
+### Phase 2 — Coin Change Algorithm & UI
+- Dynamic Programming (Combination DP) implementation
+- Coin change test suite and edge case validation
+- Unity-based test UI scene
+- Breakdown visualization support
+
+### Phase 3 — Swipe-Snap Scroll Menu System
+- Swipe/touch-driven horizontal level selection menu
+- Snap animation system
+- MVC/SOLID-based UI architecture
+- Pagination dots, scaling animation, Prev/Next controls
+- Multi-aspect-ratio responsive support (9:16 → 3:4)
+
+### Phase 4 — Image Download System
+- Async image downloading pipeline
+- Download queue with concurrent request limiting
+- 10-second override request handling
+- Memory + Disk caching system
+- WebImage UI component with fallback handling
+- Real-time queue monitoring test scene
+- RGBA32 alpha texture support
+
+### Phase 5 — Documentation & Showcase
+- README creation and refinement
+- Demo screenshot integration
+- Project showcase improvements
+- Repository presentation cleanup
+
+### Phase 6 — Final Submission Preparation
+- Final task audit fixes
+- UI/UX spacing refinements
+- Packaging and export preparation
+- README finalization and delivery polish
 ```
 
 \---
