@@ -180,6 +180,56 @@ namespace TechnicalAssignment.ImageDownloader.Core
             _downloadQueue.Enqueue(url, callback);
         }
 
+        public void RequestImage(string url, Action<Texture2D, string> callback, bool useMemoryCache = true)
+        {
+            if (string.IsNullOrEmpty(url))
+            {
+                callback?.Invoke(null, "URL is null or empty.");
+                return;
+            }
+
+            if (callback == null)
+            {
+                Debug.LogWarning($"[ImageDownloader] RequestImage called with null callback for: {url}");
+                return;
+            }
+
+            EnsureInitialized();
+
+            // Tier 1: Memory Cache — only if this WebImage wants it
+            if (useMemoryCache)
+            {
+                Texture2D memoryTexture = _cacheManager.GetFromMemory(url);
+                if (memoryTexture != null)
+                {
+                    if (_verboseLogging)
+                        Debug.Log($"[ImageDownloader] Memory HIT: {url.Substring(0, Mathf.Min(50, url.Length))}");
+                    callback.Invoke(memoryTexture, null);
+                    return;
+                }
+            }
+
+            // Tier 2: Disk Cache (always check regardless of memory flag)
+            if (_cacheManager.ExistsOnDisk(url))
+            {
+                var diskResult = _cacheManager.LoadFromDisk(url);
+                if (diskResult.IsSuccess)
+                {
+                    // Only store in memory if this WebImage wants it
+                    if (useMemoryCache)
+                        _cacheManager.StoreInMemory(url, diskResult.Value);
+
+                    callback.Invoke(diskResult.Value, null);
+                    return;
+                }
+                // Disk load failed (corrupt file?) → fall through to network
+                Debug.LogWarning($"[ImageDownloader] Disk load failed: {diskResult.ErrorMessage}");
+            }
+
+            // Tier 3: Network Download
+            _downloadQueue.Enqueue(url, callback);
+        }
+
         public void CancelRequest(string url, Action<Texture2D, string> callback)
         {
             // In a full implementation, we'd remove the specific callback

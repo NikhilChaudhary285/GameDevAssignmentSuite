@@ -48,6 +48,9 @@ namespace TechnicalAssignment.ImageDownloader.UI
         [Header("── Debug ───────────────────────────")]
         [SerializeField] private bool _showDebugState = false;
 
+        [Header("── Caching ───────────────────────")]
+        [SerializeField] private bool _useMemoryCache = true;
+
         // ── Runtime ────────────────────────────────────────────────────────
         private Image _image;
         private string _currentUrl;
@@ -83,6 +86,7 @@ namespace TechnicalAssignment.ImageDownloader.UI
         /// Load image from URL.
         /// Cancels any in-progress download for a different URL.
         /// Safe to call multiple times — handles URL changes correctly.
+        /// Request via the downloader (Pass memory cache preference to downloader)
         /// </summary>
         public void SetUrl(string url)
         {
@@ -101,8 +105,8 @@ namespace TechnicalAssignment.ImageDownloader.UI
             SetState(WebImageState.Loading);
             ShowLoading();
 
-            // Request via the downloader (handles cache automatically)
-            ImageDownloader.Instance.RequestImage(url, OnImageReceived);
+            // Request via the downloader (Pass memory cache preference to downloader)
+            ImageDownloader.Instance.RequestImage(url, OnImageReceived, _useMemoryCache);
         }
 
         /// <summary>

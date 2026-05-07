@@ -27,6 +27,17 @@ namespace TechnicalAssignment.ImageDownloader.Core
         void RequestImage(string url, Action<Texture2D, string> callback);
 
         /// <summary>
+        /// Request an image from URL.
+        /// Callback fires with (Texture2D texture, string error).
+        /// If texture is null → error occurred, use fallback.
+        /// If error is null → success.
+        ///
+        /// Thread: Callback always fires on Unity main thread.
+        /// Request via the downloader (Pass memory cache preference to downloader)
+        /// </summary>
+        void RequestImage(string url, Action<Texture2D, string> callback, bool useMemoryCache = true);
+
+        /// <summary>
         /// Cancel all pending callbacks for a URL.
         /// Call when the requesting component is destroyed mid-download.
         /// </summary>

@@ -277,9 +277,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 78c84c0c45af7084bb80a93fb42d91e0, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -301,7 +301,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _url: 
   _loadOnStart: 0
-  _loadingSprite: {fileID: 0}
-  _fallbackSprite: {fileID: 0}
+  _loadingSprite: {fileID: 21300000, guid: 78c84c0c45af7084bb80a93fb42d91e0, type: 3}
+  _fallbackSprite: {fileID: 21300000, guid: fcbc0c048021a2d4b8c52fd788201ddf, type: 3}
   _preserveAspect: 1
   _showDebugState: 1
+  _useMemoryCache: 1
