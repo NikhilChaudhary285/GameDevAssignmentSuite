@@ -95,7 +95,7 @@ Orientation     Portrait (9:16 → 3:4 aspect ratios)
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/unity-technical-assignment.git
+git clone https://github.com/NikhilChaudhary285/GameDevAssignmentSuite.git
 
 # Open in Unity Hub
 # File → Open Project → select the cloned folder
@@ -756,12 +756,13 @@ float newScale = Mathf.Lerp(current, target, Time.deltaTime \\\\\\\\\\\\\\\* 10f
 
 ### Task 3 — Image Downloader
 
-1. Open `ImageDownloaderScene` → Press **Play**
-2. Click **📥 LOAD ALL** → observe queue counter (max 3 active)
-3. Wait for all to load → click **🔄 RELOAD** → verify instant memory cache
-4. Click **🗑 CLEAR CACHE** → Stop → Play → Load All → verify disk cache
-5. Test custom URL input with any image URL
-6. Test 10-second override: set `MaxConcurrentDownloads=1`, load 5 images, wait 10s
+1. Open `ImageDownloaderScene` → Press **▶ Play**
+2. Click **📥 LOAD ALL** → observe queue counter shows max **3 active** downloads at a time
+3. Wait for all images to load → click **🔄 RELOAD** → images appear **instantly** (memory cache hit — no network requests)
+4. Press **⏹ Stop** → Press **▶ Play** again → click **📥 LOAD ALL** → images load **fast from disk** (memory cache is gone after app close, but disk cache still valid — no re-download)
+5. Click **🗑 CLEAR DISK CACHE** → Press **⏹ Stop** → Press **▶ Play** → click **📥 LOAD ALL** → images **re-download from network** (both caches cleared — full download cycle restarts, then memory + disk cache rebuild automatically)
+6. Test custom URL → paste any image URL into the input field → click **LOAD** → verify image appears in grid
+7. Test 10-second override → set `MaxConcurrentDownloads = 1` in `ImageDownloader` Inspector → click **📥 LOAD ALL** with 5+ images → wait 10 seconds → observe Console log: `OVERRIDE: Request waited 10s — forcing slot`
 
 \---
 
@@ -795,20 +796,16 @@ float newScale = Mathf.Lerp(current, target, Time.deltaTime \\\\\\\\\\\\\\\* 10f
 
 ## 📊 Screenshots \& Demo
 
-> \\\\\\\\\\\\\\\*Add your own screenshots here after running the project\\\\\\\\\\\\\\\*
+> \\\\\\\\\\\\\\\*Added screenshot links for demo showcase\\\\\\\\\\\\\\\*
 
 ```
 | Scene | Screenshot |
 |---|---|
-| Coin Change Test UI | ![Coin Change Test UI](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/coin-change-ui.png)
-| Scroll Menu — 9:16 | ![Scroll Menu 9:16](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/scroll-menu-916.png)
-| Scroll Menu — 3:4 | ![Scroll Menu 3:4](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/scroll-menu-34.png)
-| Image Downloader Grid | ![Image Downloader Grid](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/image-downloader-grid.png)
-| Image Downloader Queue | ![Image Downloader Queue](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/image-downloader-queue.png)
-[![Image Downloader Queue](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/image-downloader-queue.png)
-
-![ImageDownloaderQueue](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/image-downloader-queue.png)
-
+| Coin Change Test UI | ![Coin Change Test UI](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/coin-change-ui.png) |
+| Scroll Menu — 9:16 | ![Scroll Menu 9:16](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/scroll-menu-916.png) |
+| Scroll Menu — 3:4 | ![Scroll Menu 3:4](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/scroll-menu-34.png) |
+| Image Downloader Grid | ![Image Downloader Grid](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/image-downloader-grid.png) |
+| Image Downloader Queue | ![Image Downloader Queue](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/image-downloader-queue.png) |
 ```
 
 \---
@@ -821,7 +818,9 @@ float newScale = Mathf.Lerp(current, target, Time.deltaTime \\\\\\\\\\\\\\\* 10f
 Assets → Export Package →
   ✅ \\\\\\\\\\\\\\\_Project/Scripts/ScrollMenu/
   ✅ \\\\\\\\\\\\\\\_Project/Scenes/ScrollMenuScene.unity
-  ✅ \\\\\\\\\\\\\\\_Project/Prefabs/UI/
+  ✅ \\\\\\\\\\\\\\\_Project/Prefabs/UI/LevelCardPrefab.prefab
+  ✅ \\\\\\\\\\\\\\\_Project/Prefabs/UI/DotPrefab.prefab
+  ✅ \\\\\\\\\\\\\\\_Project/Sprites/
 → Save as: ScrollMenu.unitypackage
 ```
 
@@ -833,7 +832,8 @@ Assets → Export Package →
   ✅ \\\\\\\\\\\\\\\_Project/Scripts/Common/
   ✅ \\\\\\\\\\\\\\\_Project/Scenes/ImageDownloaderScene.unity
   ✅ \\\\\\\\\\\\\\\_Project/Prefabs/ImageDownloader/
-  ✅ \\\\\\\\\\\\\\\_Project/Resources/Fallback/
+  ✅ \\\\\\\\\\\\\\\_Project/Sprites/
+  ✅ \\\\\\\\\\\\\\\_Project/Resources/Fallback/ (more fallback or usable sprites, if any)
 → Save as: ImageDownloader.unitypackage
 ```
 
