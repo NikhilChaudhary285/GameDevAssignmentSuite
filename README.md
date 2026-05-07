@@ -800,11 +800,11 @@ float newScale = Mathf.Lerp(current, target, Time.deltaTime \\\\\\\\\\\\\\\* 10f
 ```
 | Scene | Screenshot |
 |---|---|
-| Coin Change Test UI | ![Coin Change Test UI](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/coin-change-ui.png) |
-| Scroll Menu — 9:16 | ![Scroll Menu 9:16](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/scroll-menu-916.png) |
-| Scroll Menu — 3:4 | ![Scroll Menu 3:4](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/scroll-menu-34.png) |
-| Image Downloader Grid | ![Image Downloader Grid](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/image-downloader-grid.png) |
-| Image Downloader Queue | ![Image Downloader Queue](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/image-downloader-queue.png) |
+| Coin Change Test UI | ![Coin Change Test UI](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/coin-change-ui.png)
+| Scroll Menu — 9:16 | ![Scroll Menu 9:16](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/scroll-menu-916.png)
+| Scroll Menu — 3:4 | ![Scroll Menu 3:4](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/scroll-menu-34.png)
+| Image Downloader Grid | ![Image Downloader Grid](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/image-downloader-grid.png)
+| Image Downloader Queue | ![Image Downloader Queue](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/image-downloader-queue.png)
 ```
 
 \---
