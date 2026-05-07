@@ -6,7 +6,6 @@
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS%20%7C%20Editor-blue?style=for-the-badge)
 ![Architecture](https://img.shields.io/badge/Architecture-SOLID%20%7C%20Clean%20Code-orange?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 **A complete Unity project demonstrating three production-level systems:
 Algorithm Design · Mobile UI · Networked Image Management**
@@ -857,7 +856,7 @@ Phase 4 → Image Download System — queue, cache, WebImage, test UI
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nikhilchaudhary285/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://nikhilchaudhary285.github.io/)
 
-> \\\\\\\\\\\\\\\*Unity Developer | 2.5 Years Experience | Mobile Games | Clean Architecture\\\\\\\\\\\\\\\*
+> \\\\\\\\\\\\\\\*Unity Developer | 2.5+ Years Experience | Mobile Games | Clean Architecture\\\\\\\\\\\\\\\*
 
 \---
 
