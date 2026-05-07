@@ -2,11 +2,11 @@
 
 <div align="center">
 
-!\[Unity] https://img.shields.io/badge/Unity-2022.3.62f3-black?style=for-the-badge\&logo=unity\&logoColor=white
-!\[C#] https://img.shields.io/badge/C%23-239120?style=for-the-badge\&logo=csharp\&logoColor=white
-!\[Platform] https://img.shields.io/badge/Platform-Android%20%7C%20iOS%20%7C%20Editor-blue?style=for-the-badge 
-!\[Architecture] https://img.shields.io/badge/Architecture-SOLID%20%7C%20Clean%20Code-orange?style=for-the-badge 
-!\[License] https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Unity](https://img.shields.io/badge/Unity-2022.3.62f3-black?style=for-the-badge&logo=unity&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS%20%7C%20Editor-blue?style=for-the-badge)
+![Architecture](https://img.shields.io/badge/Architecture-SOLID%20%7C%20Clean%20Code-orange?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 **A complete Unity project demonstrating three production-level systems:
 Algorithm Design · Mobile UI · Networked Image Management**
@@ -801,11 +801,11 @@ float newScale = Mathf.Lerp(current, target, Time.deltaTime \\\\\\\\\\\\\\\* 10f
 ```
 | Scene | Screenshot |
 |---|---|
-| Coin Change Test UI | https://github.com/NikhilChaudhary285/GameDevAssignmentSuite/blob/main/Screenshots/coin-change-ui.png |
-| Scroll Menu — 9:16 | https://github.com/NikhilChaudhary285/GameDevAssignmentSuite/blob/main/Screenshots/scroll-menu-916.png |
-| Scroll Menu — 3:4 | https://github.com/NikhilChaudhary285/GameDevAssignmentSuite/blob/main/Screenshots/scroll-menu-34.png |
-| Image Downloader Grid | https://github.com/NikhilChaudhary285/GameDevAssignmentSuite/blob/main/Screenshots/image-downloader-grid.png |
-| Image Downloader Queue | https://github.com/NikhilChaudhary285/GameDevAssignmentSuite/blob/main/Screenshots/image-downloader-queue.png |
+| Coin Change Test UI | ![Coin Change Test UI](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/coin-change-ui.png) |
+| Scroll Menu — 9:16 | ![Scroll Menu 9:16](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/scroll-menu-916.png) |
+| Scroll Menu — 3:4 | ![Scroll Menu 3:4](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/scroll-menu-34.png) |
+| Image Downloader Grid | ![Image Downloader Grid](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/image-downloader-grid.png) |
+| Image Downloader Queue | ![Image Downloader Queue](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/image-downloader-queue.png) |
 ```
 
 \---
@@ -853,9 +853,9 @@ Phase 4 → Image Download System — queue, cache, WebImage, test UI
 
 **Nikhil Chaudhary**
 
-[!\[GitHub] https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) https://github.com/NikhilChaudhary285
-[!\[LinkedIn] https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white) https://www.linkedin.com/in/nikhilchaudhary285/
-[!\[Portfolio] https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white) https://nikhilchaudhary285.github.io/
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NikhilChaudhary285)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nikhilchaudhary285/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://nikhilchaudhary285.github.io/)
 
 > \\\\\\\\\\\\\\\*Unity Developer | 2.5 Years Experience | Mobile Games | Clean Architecture\\\\\\\\\\\\\\\*
 
