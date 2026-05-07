@@ -806,7 +806,9 @@ float newScale = Mathf.Lerp(current, target, Time.deltaTime \\\\\\\\\\\\\\\* 10f
 | Image Downloader Grid | ![Image Downloader Grid](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/image-downloader-grid.png)
 | Image Downloader Queue | ![Image Downloader Queue](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/image-downloader-queue.png)
 [![Image Downloader Queue](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/image-downloader-queue.png)
-[![ImageDownloaderQueue](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/image-downloader-queue.png)
+
+![ImageDownloaderQueue](https://raw.githubusercontent.com/NikhilChaudhary285/GameDevAssignmentSuite/main/Screenshots/image-downloader-queue.png)
+
 ```
 
 \---
