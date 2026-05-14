@@ -889,6 +889,27 @@ This project was developed incrementally in structured production-style phases u
 
 \---
 
+---
+
+## 🔗 Links
+
+### 🎮 Gameplay Videos
+
+#### 1️⃣ Coin Change Algorithm
+[▶ Watch Video](https://drive.google.com/file/d/1OL3WnLgpYZLYUxcHmRtyU0EL2FZ-GieR/view?usp=sharing)
+
+#### 2️⃣ Touch Scroll Menu
+[▶ Watch Video](https://drive.google.com/file/d/1OvCGp2qHFVf1361gJP61XTzvATsnpKOy/view?usp=sharing)
+
+#### 3️⃣ Image Downloader System
+[▶ Watch Video](https://drive.google.com/file/d/1MqaLM23hXKbXuAuuor-WFplhZJYfx43N/view?usp=sharing)
+
+### 💻 GitHub Repository
+
+[![GitHub](https://img.shields.io/badge/View%20Repository-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NikhilChaudhary285/SnakeGame)
+
+---
+
 ## 👨‍💻 Author
 
 **Nikhil Chaudhary**
