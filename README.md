@@ -906,7 +906,7 @@ This project was developed incrementally in structured production-style phases u
 
 ### 💻 GitHub Repository
 
-[![GitHub](https://img.shields.io/badge/View%20Repository-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NikhilChaudhary285/SnakeGame)
+[![GitHub](https://img.shields.io/badge/View%20Repository-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NikhilChaudhary285/GameDevAssignmentSuite)
 
 ---
 
